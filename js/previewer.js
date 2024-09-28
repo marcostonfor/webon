@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         };
  
         // Cargar y renderizar el archivo Markdown inicial
-        loadMarkdown('./README.md');
+        loadMarkdown('README.md');
         // loadMarkdown('./fundamentosInternet/conceptosBasicos.md'); // Asegúrate de que este archivo exista en tu servidor
     }
 
