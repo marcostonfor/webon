@@ -1,0 +1,352 @@
+@import url("https://fonts.cdnfonts.com/css/beautifulday");
+@import url("https://fonts.cdnfonts.com/css/3x3-dots");
+@import url("https://fonts.cdnfonts.com/css/frijole");
+@import url("https://fonts.cdnfonts.com/css/all-disney");
+@import url("https://fonts.cdnfonts.com/css/digital-numbers");
+@import url("https://fonts.cdnfonts.com/css/typewriter-oldstyle");
+@import url("https://fonts.cdnfonts.com/css/frijole");
+
+
+#preview {
+  width: 97% !important;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0vh;
+  background-image: linear-gradient(-2000deg, hsla(0, 0%, 50%, 0.61), hsla(41, 100%, 50%, 0.5), hsla(0, 0%, 50%, 0.61), hsla(41, 94%, 27%, 0.5)), linear-gradient(2000deg, gray, hsl(41, 100%, 50%), gray, hsl(41, 94%, 27%));
+  background-size: cover !important;
+  background-position: top center !important;
+}
+
+.markdown-content {
+  border-radius: 0.7vw;
+  padding: 2vw 1vw;
+  font-family: "Typewriter", sans-serif;
+  color: azure;
+}
+
+#preview summary::marker {
+  content: none !important;
+}
+#preview summary {
+  cursor: pointer !important;
+  color: cornflowerblue;
+  text-decoration: underline;
+  margin: 0.5vh auto;
+}
+#preview summary::after {
+  content: " Mostrar";
+  color: rgb(183, 183, 248);
+  margin-right: 10px;
+}
+#preview details[open] summary::after {
+  content: " Oculta";
+}
+#preview .capitulo::before {
+  content: "Capitulo " !important;
+  color: rgb(183, 183, 248);
+  margin-right: 10px;
+}
+
+.markdown-content .imgs {
+  width: 11% !important;
+  border-radius: 50% !important;
+  border-bottom: turquoise 0.3vw solid;
+  border-top: turquoise 0.3vw solid;
+  border-right: 0.2vw dashed dodgerblue;
+  border-left: 0.2vw dashed dodgerblue;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  box-shadow: 0 0.3vw 1px rgba(0, 0, 0, 0.8), 0 -0.3vw 1px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+#preview #resumen-sintx-blog {
+  display: flex !important;
+  justify-content: center;
+  align-items: baseline;
+}
+#preview #resumen-sintx-blog figure {
+  width: 48% !important;
+}
+#preview #resumen-sintx-blog figure figcaption {
+  width: 100% !important;
+  border: 0.1vw dashed aliceblue;
+  padding: 0 0.3vw;
+}
+
+#preview #resumen-sintx-listas {
+  display: flex !important;
+  justify-content: center;
+  align-items: baseline;
+}
+#preview #resumen-sintx-listas figure {
+  width: 48% !important;
+}
+#preview #resumen-sintx-listas figure figcaption {
+  width: 100% !important;
+  border: 0.1vw dashed aliceblue;
+  padding: 0 0.3vw;
+}
+
+#preview #resumen-sintx-enlaces {
+  display: flex !important;
+  justify-content: center;
+  align-items: baseline;
+}
+#preview #resumen-sintx-enlaces figure {
+  width: 48% !important;
+}
+#preview #resumen-sintx-enlaces figure figcaption {
+  width: 100% !important;
+  border: 0.1vw dashed aliceblue;
+  padding: 0 0.3vw;
+}
+
+#preview #resumen-sintx-variis {
+  display: flex !important;
+  justify-content: center;
+  align-items: baseline;
+}
+#preview #resumen-sintx-variis figure {
+  width: 48% !important;
+}
+#preview #resumen-sintx-variis figure figcaption {
+  width: 100% !important;
+  border: 0.1vw dashed aliceblue;
+  padding: 0 0.3vw;
+}
+
+#preview #resumen-sintx-codeYtablas {
+  display: flex !important;
+  justify-content: center;
+  align-items: baseline;
+}
+#preview #resumen-sintx-codeYtablas figure {
+  width: 48% !important;
+}
+#preview #resumen-sintx-codeYtablas figure figcaption {
+  width: 100% !important;
+  border: 0.1vw dashed aliceblue;
+  padding: 0 0.3vw;
+}
+
+#preview section.fotos figure {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  border: 0.3vw solid white;
+  padding: 1vw;
+  position: relative;
+}
+
+#preview section.fotos figure img {
+  position: inherit;
+  width: 23%;
+  opacity: 1;
+}
+
+#preview .figure {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+#preview figcaption {
+  width: 65% !important;
+}
+
+#preview .figure div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33%;
+}
+
+#preview img {
+  border-radius: 1.6vw;
+  width: 15%;
+}
+
+#preview mark {
+  padding: 0.2vw;
+  border-radius: 0.3vw;
+}
+
+.markdown-content {
+  border-radius: 0.7vw;
+  padding: 2vw 1vw;
+  background-image: linear-gradient(0deg, #555, #333, #555);
+  font-family: "Typewriter", sans-serif;
+  color: azure;
+}
+
+.markdown-content h1 {
+  color: #fafbfc;
+  font-weight: bold;
+  text-align: start;
+  margin: auto 2vw;
+  padding: 0.3vw 0.6vw;
+  border-bottom: 0.2vw solid hsla(210, 32%, 91%, 0.4);
+  box-shadow: inset 10vw 14vw 12px 41px rgba(0, 0, 0, 0.3);
+}
+
+.markdown-content h6 a {
+  color: dodgerblue !important;
+  text-decoration: none;
+  font-size: 14pt !important;
+}
+
+.markdown-content code {
+  padding: 0vw 1.6vw;
+  border-radius: 0.3vw;
+  font-family: monospace;
+  font-size: 9pt;
+  box-shadow: inset 1500vw 1500vw 1px 1px rgba(95, 93, 93, 0.6), inset 1500vw 1500vw 2px 10px hsla(210, 100%, 56%, 0.425);
+  color: rgb(250, 202, 10);
+  /* 
+  background-color: whitesmoke;
+  color: hsl(0, 0%, 5%); */
+}
+
+.markdown-content pre {
+  padding: 1vw;
+  border-radius: 5px;
+  background-color: #555;
+}
+
+.markdown-content ul li a {
+  color: rgb(189, 205, 221);
+  text-decoration: none;
+  font-size: 19pt !important;
+}
+
+.markdown-content ul {
+  box-shadow: inset 12vw 12vw 12px 200px hsl(0, 0%, 35%);
+}
+
+.markdown-content ol {
+  box-shadow: inset 12vw 12vw 12px 1200px hsl(229, 17%, 47%);
+  list-style-type: none;
+}
+
+.markdown-content table {
+  width: 80% !important;
+  margin: 2vw auto;
+  border: none !important;
+}
+
+.markdown-content table,
+th,
+td {
+  border: 0.01vw solid wheat;
+  text-align: center;
+  border-collapse: collapse;
+  border-color: transparent;
+}
+
+table img {
+  width: 75% !important;
+}
+
+table th a,
+table td a {
+  color: rgb(189, 205, 221) !important;
+  text-decoration: none;
+  font-size: 19pt !important;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltiptext {
+  position: absolute;
+  top: -08vh;
+  left: auto;
+  padding: 2vh 4vw;
+  width: 65%;
+  height: auto;
+  margin: auto auto;
+  background-color: #555;
+  display: none;
+}
+
+.tooltip:hover .tooltiptext {
+  display: block !important;
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #ddd;
+}
+
+.dropdown a {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+body {
+  background-image: linear-gradient(to right, hsla(49, 100%, 25%, 0.5), transparent 30%, transparent 70%, hsla(39, 100%, 50%, 0.5)), linear-gradient(to bottom, hsla(39, 100%, 25%, 0.5), transparent 30%, transparent 70%, hsla(39, 100%, 50%, 0.5)), linear-gradient(to left, hsla(32, 100%, 25%, 0.5), transparent 30%, transparent 70%, hsla(39, 100%, 50%, 0.5)), linear-gradient(to top, hsla(32, 100%, 25%, 0.5), transparent 30%, transparent 70%, hsla(39, 100%, 50%, 0.5));
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 0.1vw dashed black;
+  border-radius: 1vw;
+  box-shadow: 0.1vh 0.1vw 1px 5px darkgray inset, 0.4vh 0.4vw 1px black, -0.3vh -0.3vw 1px black;
+  perspective: 1200px;
+  transform: scale(1, 1);
+  filter: opacity(0.8);
+}
+
+#preview blockquote {
+  font-size: 14pt;
+  padding: 1vh 2vw;
+  font-weight: 100;
+  font-style: italic !important;
+  color: hsl(240, 100%, 25%) !important;
+  text-shadow: 0 0 2px hsl(204, 70%, 53%);
+  background-color: hsl(199, 100%, 50%);
+}
+
+#preview strong {
+  padding: 0 0.6vw;
+  color: #333;
+  text-shadow: 0.1vh 0.1vw 1px white;
+  box-shadow: inset -0.3vh 0 2px 20px orange;
+  border-radius: 0.6vw;
+}

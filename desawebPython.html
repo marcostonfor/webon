@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ca-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents .MD previewer</title>
+    <script>
+        document.title = 'Guía de desarrollo web con PYTHON';
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylemd.css">
+</head>
+
+<body>
+    <div id="up"></div>
+    <section id="preview" class="markdown-content"></section>
+    <br><br><br>
+    <div id="down"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="./js/previewer.js"></script>
+    <script>
+        // Escucha el evento de desplazamiento (scroll) en la página
+        document.addEventListener('scroll', function() {
+            const upTodown = document.getElementById('upTodown');
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        
+            // Mostrar el componente cuando el scroll pasa los 100px, y ocultarlo en los extremos
+            if (scrollPosition > 100 && scrollPosition < maxScroll - 100) {
+                upTodown.style.opacity = '1';  // Mostrar el componente
+                upTodown.style.pointerEvents = 'auto';  // Habilitar clics
+            } else {
+                upTodown.style.opacity = '0';  // Ocultar el componente
+                upTodown.style.pointerEvents = 'none';  // Deshabilitar clics
+            }
+        });
+        
+        // Funcionalidad para desplazarse al principio de la página al hacer clic en "UP"
+        document.getElementById('up').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'  // Desplazamiento suave hacia arriba
+            });
+        });
+        
+        // Funcionalidad para desplazarse al final de la página al hacer clic en "DOWN"
+        document.getElementById('down').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: 'smooth'  // Desplazamiento suave hacia abajo
+            });
+        });
+        </script>
+        
+        
+        
+</body>
+
+</html>
