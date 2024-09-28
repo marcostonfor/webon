@@ -20,45 +20,7 @@
     <br><br><br>
     <div id="down"></div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="js/previewer.js"></script>
-    <script>
-        // Escucha el evento de desplazamiento (scroll) en la página
-        document.addEventListener('scroll', function() {
-            const upTodown = document.getElementById('upTodown');
-            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-        
-            // Mostrar el componente cuando el scroll pasa los 100px, y ocultarlo en los extremos
-            if (scrollPosition > 100 && scrollPosition < maxScroll - 100) {
-                upTodown.style.opacity = '1';  // Mostrar el componente
-                upTodown.style.pointerEvents = 'auto';  // Habilitar clics
-            } else {
-                upTodown.style.opacity = '0';  // Ocultar el componente
-                upTodown.style.pointerEvents = 'none';  // Deshabilitar clics
-            }
-        });
-        
-        // Funcionalidad para desplazarse al principio de la página al hacer clic en "UP"
-        document.getElementById('up').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'  // Desplazamiento suave hacia arriba
-            });
-        });
-        
-        // Funcionalidad para desplazarse al final de la página al hacer clic en "DOWN"
-        document.getElementById('down').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: document.documentElement.scrollHeight,
-                behavior: 'smooth'  // Desplazamiento suave hacia abajo
-            });
-        });
-        </script>
-        
-        
-        
+    <script src="./js/previewer.js"></script>
 </body>
 
 </html>
