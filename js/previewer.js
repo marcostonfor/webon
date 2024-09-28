@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         };
  
         // Cargar y renderizar el archivo Markdown inicial
-        loadMarkdown('https://github.com/marcostonfor/webon/blob/998cb63321c322ed7346ebf416797d6d01ed960b/README.MD');
+        loadMarkdown('README.MD');
         // loadMarkdown('./fundamentosInternet/conceptosBasicos.md'); // Asegúrate de que este archivo exista en tu servidor
     }
 
