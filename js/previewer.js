@@ -1,47 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     function loadMarkdownContent() {
         const preview = document.getElementById("preview");
-
-        // Función para cargar y renderizar el contenido Markdown
-        // const loadMarkdown = (filePath) => {
-        //     fetch(filePath)
-        //         .then((response) => response.text())
-        //         .then((markdownContent) => {
-        //             // Renderiza el contenido Markdown
-        //             preview.innerHTML = marked.parse(markdownContent);
-
-        //             // Ejecuta el scroll al tope de la página después de cargar el contenido
-        //             scrollToTop();
-
-        //             // Agrega el evento a los enlaces
-        //             const links = preview.querySelectorAll("a");
-        //             links.forEach((link) => {
-        //                 link.addEventListener("click", (e) => {
-        //                     const href = link.getAttribute("href");
-
-        //                     // Verifica si el enlace es externo
-        //                     const isExternal = href.startsWith("http") || href.startsWith("https");
-
-        //                     if (isExternal) {
-        //                         // Abre el enlace externo en una nueva pestaña
-        //                         link.setAttribute("target", "_blank");
-        //                     } else {
-        //                         e.preventDefault(); // Previene el comportamiento por defecto del enlace
-        //                         // Cargar el nuevo contenido del archivo Markdown
-        //                         loadMarkdown(href);
-        //                     }
-        //                 });
-        //             });
-        //         })
-        //         .catch((error) =>
-        //             console.error("Error al cargar el archivo Markdown:", error)
-        //         );
-        // };
-
-
-
-
-        // Función para cargar y renderizar Markdown
         const loadMarkdown = (filePath) => {
             fetch(filePath)
                 .then((response) => {
@@ -78,7 +37,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         };
  
         // Cargar y renderizar el archivo Markdown inicial
-        loadMarkdown('./README.md');
+        loadMarkdown('README.md');
         // loadMarkdown('./fundamentosInternet/conceptosBasicos.md'); // Asegúrate de que este archivo exista en tu servidor
     }
 
